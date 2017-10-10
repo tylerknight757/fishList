@@ -63,6 +63,7 @@
 		2F62BFFB1F83D7EF00EE96FD /* blackDrum.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2F62BFFA1F83D7EF00EE96FD /* blackDrum.jpg */; };
 		2F62BFFD1F83D80300EE96FD /* redDrum.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2F62BFFC1F83D80300EE96FD /* redDrum.jpg */; };
 		2F62C0011F83D88F00EE96FD /* cobia.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2F62C0001F83D88F00EE96FD /* cobia.jpg */; };
+		2F62C0031F8BCF1100EE96FD /* spadefish.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2F62C0021F8BCF1100EE96FD /* spadefish.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -124,6 +125,7 @@
 		2F62BFFA1F83D7EF00EE96FD /* blackDrum.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = blackDrum.jpg; path = ../../blackDrum.jpg; sourceTree = "<group>"; };
 		2F62BFFC1F83D80300EE96FD /* redDrum.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = redDrum.jpg; path = ../../redDrum.jpg; sourceTree = "<group>"; };
 		2F62C0001F83D88F00EE96FD /* cobia.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = cobia.jpg; path = ../../cobia.jpg; sourceTree = "<group>"; };
+		2F62C0021F8BCF1100EE96FD /* spadefish.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = spadefish.jpg; path = ../../spadefish.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,6 +189,7 @@
 				2F62BFB11F83492700EE96FD /* sheepshead.jpg */,
 				2F62BFB31F83498600EE96FD /* triggerfish.jpg */,
 				2F62BFB51F834AD900EE96FD /* sturgeon.jpg */,
+				2F62C0021F8BCF1100EE96FD /* spadefish.jpg */,
 				2F62BFB71F834B7600EE96FD /* bonefish.jpg */,
 				2F62BFB91F83C43B00EE96FD /* snook.jpg */,
 				2F62BFBB1F83C4D900EE96FD /* redSnapper.jpg */,
@@ -295,6 +298,7 @@
 				2F62BFCC1F83C84200EE96FD /* bandedRudderfish.jpg in Resources */,
 				2F62BFD61F83C9D200EE96FD /* blueMarlin.jpg in Resources */,
 				2F62BF9E1F83171900EE96FD /* speckledTrout.jpg in Resources */,
+				2F62C0031F8BCF1100EE96FD /* spadefish.jpg in Resources */,
 				2F62BFEC1F83CF0400EE96FD /* yellowfinTuna.jpg in Resources */,
 				2F62BFF21F83CFFC00EE96FD /* sandbarShark.jpg in Resources */,
 				2F62BFA61F8343BA00EE96FD /* bluefish.jpg in Resources */,
