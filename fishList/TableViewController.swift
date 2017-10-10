@@ -15,9 +15,8 @@ class TableViewController: UIViewController, UITableViewDataSource, UITableViewD
     var items = [FishItem]()
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        let addedRow = isEditing ? 1 : 0
         
-        return items.count + addedRow
+        return items.count
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -27,11 +26,7 @@ class TableViewController: UIViewController, UITableViewDataSource, UITableViewD
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
         
-        if indexPath.row == 0 && isEditing {
-            cell.textLabel?.text = "Add New Fish"
-            cell.detailTextLabel?.text = nil
-            cell.imageView?.image = nil
-        } else {
+
             let item = items[indexPath.row]
             
             cell.textLabel?.text = item.title
@@ -42,7 +37,6 @@ class TableViewController: UIViewController, UITableViewDataSource, UITableViewD
             } else {
                 cell.imageView?.image = nil
             }
-        }
         
         return cell
     }
@@ -51,25 +45,17 @@ class TableViewController: UIViewController, UITableViewDataSource, UITableViewD
         if editingStyle == .delete {
             items.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            let newFish = FishItem(title: "New Fish", subtitle: "", imageName: nil)
-            items.append(newFish)
-            tableView.insertRows(at: [indexPath], with: .fade)
         }
     }
     
     func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCellEditingStyle {
-        if indexPath.row == 0 {
-            return .insert
-        } else {
+        
             return .delete
         }
-    }
+    
     
     func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        if indexPath.row <= 0 && isEditing {
-            return false
-        }
+       
         return true
     }
     
@@ -81,9 +67,14 @@ class TableViewController: UIViewController, UITableViewDataSource, UITableViewD
     
     }
     
+    func addTapped(sender: UIBarButtonItem){
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Add", style: .plain, target: self, action: #selector(addTapped))
         
         navigationItem.rightBarButtonItem = editButtonItem
         
@@ -158,25 +149,10 @@ class TableViewController: UIViewController, UITableViewDataSource, UITableViewD
         super.setEditing(editing, animated: animated)
         
         if editing {
-            tableView.beginUpdates()
-            
-            let indexPath = IndexPath(row: 0, section: 0)
-            tableView.insertRows(at: [indexPath], with: .fade)
-            
-            tableView.endUpdates()
             tableView.setEditing(true, animated: true)
         } else {
-            tableView.beginUpdates()
-            
-            let indexPath = IndexPath(row: 0, section: 0)
-            tableView.deleteRows(at: [indexPath], with: .fade)
-            
-            tableView.endUpdates()
             tableView.setEditing(false, animated: true)
         }
     }
 
-
-
 }
-
