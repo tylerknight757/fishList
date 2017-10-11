@@ -64,6 +64,7 @@
 		2F62BFFD1F83D80300EE96FD /* redDrum.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2F62BFFC1F83D80300EE96FD /* redDrum.jpg */; };
 		2F62C0011F83D88F00EE96FD /* cobia.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2F62C0001F83D88F00EE96FD /* cobia.jpg */; };
 		2F62C0031F8BCF1100EE96FD /* spadefish.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2F62C0021F8BCF1100EE96FD /* spadefish.jpg */; };
+		2F62C0051F8D704600EE96FD /* CatchInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F62C0041F8D704600EE96FD /* CatchInformationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -126,6 +127,7 @@
 		2F62BFFC1F83D80300EE96FD /* redDrum.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = redDrum.jpg; path = ../../redDrum.jpg; sourceTree = "<group>"; };
 		2F62C0001F83D88F00EE96FD /* cobia.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = cobia.jpg; path = ../../cobia.jpg; sourceTree = "<group>"; };
 		2F62C0021F8BCF1100EE96FD /* spadefish.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = spadefish.jpg; path = ../../spadefish.jpg; sourceTree = "<group>"; };
+		2F62C0041F8D704600EE96FD /* CatchInformationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatchInformationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +163,7 @@
 				2F62BF791F82C57F00EE96FD /* AppDelegate.swift */,
 				2F62BF7B1F82C57F00EE96FD /* TableViewController.swift */,
 				2F62BF8B1F82C74A00EE96FD /* FishItem.swift */,
+				2F62C0041F8D704600EE96FD /* CatchInformationViewController.swift */,
 				2F62BF7D1F82C57F00EE96FD /* Main.storyboard */,
 				2F62BF801F82C57F00EE96FD /* Assets.xcassets */,
 				2F62BF821F82C57F00EE96FD /* LaunchScreen.storyboard */,
@@ -354,6 +357,7 @@
 				2F62BF8C1F82C74A00EE96FD /* FishItem.swift in Sources */,
 				2F62BF7C1F82C57F00EE96FD /* TableViewController.swift in Sources */,
 				2F62BF7A1F82C57F00EE96FD /* AppDelegate.swift in Sources */,
+				2F62C0051F8D704600EE96FD /* CatchInformationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

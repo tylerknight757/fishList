@@ -67,14 +67,22 @@ class TableViewController: UIViewController, UITableViewDataSource, UITableViewD
     
     }
     
-    func addTapped(sender: UIBarButtonItem){
+    @IBAction func addButtonTapped(_ sender: UIBarButtonItem) {
+        
+        let storyboard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let viewController = storyboard.instantiateViewController(withIdentifier: "CatchInformationViewController")
+        viewController.modalPresentationStyle = .popover
+        let popover: UIPopoverPresentationController = viewController.popoverPresentationController!
+        popover.barButtonItem = sender
+        present(viewController, animated: true, completion:nil)
+        
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Add", style: .plain, target: self, action: #selector(addTapped))
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Add", style: .plain, target: self, action: #selector(addButtonTapped))
         
         navigationItem.rightBarButtonItem = editButtonItem
         
